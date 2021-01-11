@@ -63,23 +63,22 @@ pip install pandas
 <ul><li>https://www.youtube.com/watch?v=otzZRZtXlOs</li></ul>
 <p>Agora é possível importar as bibliotecas instaladas nele</p>
 
-Object Detection API
-https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
-TensorFlow Object Detection API Installation
-C:\Users\ALAN\Documents\TensorFlow
-Extrair https://github.com/tensorflow/models
-Renomear models-master para models
-Baixar
-https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0
-https://github.com/protocolbuffers/protobuf/releases/download/v3.4.0/protoc-3.4.0-win32.zip
+<p><b>TensorFlow Object Detection API</b></p>
+<ul><li>https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html</li></ul>
+<p>Em C:\Users\ALAN\Documents\TensorFlow
+<p>Extrair https://github.com/tensorflow/models
+<p>Renomear models-master para models</p>
+<p>Baixar</p>
+<ul><li>https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0</li>
+</li>https://github.com/protocolbuffers/protobuf/releases/download/v3.4.0/protoc-3.4.0-win32.zip</li></ul>
 
-Extrair os arquivos e copiar o arquivo .exe da pasta bin para
-C:\Users\ALAN\Documents\TensorFlow\models\research
+<p>Extrair os arquivos e copiar o arquivo .exe da pasta bin para</p>
+<p>C:\Users\ALAN\Documents\TensorFlow\models\research</p>
 
-Dentro do ambiente virtual dl4cv
+<p>Dentro do ambiente virtual dl4cv</p>
 
-cd C:\Users\ALAN\Documents\TensorFlow\models\research
-Então executar
+<p>cd C:\Users\ALAN\Documents\TensorFlow\models\research</p>
+<p>Então executar</p>
 
 ```
 protoc object_detection/protos/*.proto --python_out=.
@@ -90,26 +89,26 @@ pip install cython
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
 
-Adicionar na variável do ambiente
-C:\Users\ALAN\Documents\TensorFlow\models\research
-C:\Users\ALAN\Documents\TensorFlow\models\research\object_detection
-C:\Users\ALAN\Documents\TensorFlow\models\research\slim
+<p>Adicionar na variável do ambiente</p>
+<p>C:\Users\ALAN\Documents\TensorFlow\models\research</p>
+<p>C:\Users\ALAN\Documents\TensorFlow\models\research\object_detection</p>
+<p>C:\Users\ALAN\Documents\TensorFlow\models\research\slim</p>
 
-Em um novo terminal de comando
+<p>Em um novo terminal de comando</p>
 
 ```
 conda activate dl4cv
 cd C:\Users\ALAN\Documents\TensorFlow\models\research
 ```
 
-Por fim (a versão da biblioteca TensorFlow é mantida igual)
+<p>Por fim (a versão da biblioteca TensorFlow é mantida igual)</p>
 
 ```
 python setup.py build
 python setup.py install
 ```
 
-Testar em uma nova janela
+<p>Testar em uma nova janela</p>
 
 ```
 conda activate dl4cv
@@ -117,4 +116,4 @@ python
 import object_detection
 ```
 
-Com isso é possível usar o Jupyter
+<p>Com isso é possível usar o Jupyter</p>
